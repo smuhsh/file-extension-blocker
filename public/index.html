@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>파일 확장자 차단 관리</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="mb-3">파일 확장자 차단</h1>
+    <p class="text-muted">특정 파일 확장자의 첨부/전송을 차단합니다. (고정 확장자, 커스텀 확장자 관리)</p>
+
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">고정 확장자 (자주 차단하는 확장자)</h5>
+            <div id="fixed-list" class="list-group"></div>
+            <small class="form-text text-muted mt-2">체크/언체크하면 서버에 저장됩니다. 새로고침 시 유지됩니다.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">커스텀 확장자 추가</h5>
+            <div class="mb-2">
+              <label for="custom-input" class="form-label">확장자 입력 (최대 20자, 최대 200개)</label>
+              <div class="input-group">
+                <input id="custom-input" class="form-control" maxlength="20" placeholder="예: sh 또는 txt">
+                <button id="add-btn" class="btn btn-primary">추가</button>
+              </div>
+              <div id="input-help" class="form-text">중복 입력은 불가합니다. '.'은 붙여서 입력해도 자동 제거됩니다.</div>
+            </div>
+
+            <h6 class="mt-3">등록된 커스텀 확장자 <span id="custom-count" class="badge bg-secondary">0</span></h6>
+            <ul id="custom-list" class="list-group mt-2"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-body">
+        <h6 class="card-title">과제 설명</h6>
+        <p class="card-text small text-muted">
+          어떤 파일들은 첨부 시 보안 문제가 될 수 있습니다. 특히 exe, sh 등의 실행파일은 서버에 업로드되어 실행될 위험이 있어 차단합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

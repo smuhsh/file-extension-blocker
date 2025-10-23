@@ -1,0 +1,4 @@
+/* public/css/styles.css */
+body { background: #f8fafc; }
+.card { border-radius: 0.6rem; }
+#fixed-list .list-group-item { border: none; padding: 0.6rem 0.8rem; }
