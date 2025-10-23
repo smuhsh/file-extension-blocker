@@ -8,6 +8,7 @@
 - DB: Oracle
 
 ## 프로젝트 구조
+```
 file-extension-blocker/
 ├─ server/
 │  ├─ package.json
@@ -23,8 +24,7 @@ file-extension-blocker/
    └─ js/
       └─ app.js
 README.md
-
-
+```
 ## 설치 및 실행
 1. Oracle DB에 `FILE_EXTENSIONS` 테이블 생성 (DDL 파일 참조)
 2. 서버 환경 변수 설정 (or 직접 db.js 수정)
