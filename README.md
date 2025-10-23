@@ -8,8 +8,7 @@
 - DB: Oracle
 
 ## 프로젝트 구조
-```
-file-extension-blocker/
+```file-extension-blocker/
 ├─ server/
 │  ├─ package.json
 │  ├─ server.js
@@ -42,3 +41,24 @@ npm install
 npm run seed
 # 서버 시작
 npm start
+```
+
+## 스크린샷
+
+### DDL
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 174216" src="https://github.com/user-attachments/assets/715239a3-726d-4102-ac4d-3a8373745021" />
+
+### 데이터 생성
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 193138" src="https://github.com/user-attachments/assets/bcceb02c-ca1c-46e3-abfd-e1bd76952455" />
+
+### 데이터 적재확인
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 193151" src="https://github.com/user-attachments/assets/1d55746a-c59b-4a6f-a022-a9043f222338" />
+
+### 데이터 삭제
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 193204" src="https://github.com/user-attachments/assets/ba0769b0-2313-44d9-b47c-160b00346497" />
+
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 193212" src="https://github.com/user-attachments/assets/1a081eb3-afac-4491-9ae2-07fc8b14be2c" />
+
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 193222" src="https://github.com/user-attachments/assets/9557ea32-23f5-4a95-8c99-dbcf5b33850f" />
+
+<img width="1920" height="1080" alt="스크린샷 2025-10-22 193234" src="https://github.com/user-attachments/assets/219c9479-ca3f-44a2-a0f8-7544bfdb82bc" />
